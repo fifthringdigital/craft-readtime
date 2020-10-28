@@ -26,24 +26,24 @@ class ReadTimeTwigExtension extends \Twig_Extension
 
     public function getName()
     {
-        return 'readTime';
+        return 'jpReadTime';
     }
 
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('readTime', [$this, 'readTimeFunction']),
+            new \Twig_SimpleFunction('jpReadTime', [$this, 'jpReadTimeFunction']),
         ];
     }
 
     public function getFilters()
     {
         return [
-            new \Twig_SimpleFilter('readTime', [$this, 'readTimeFilter']),
+            new \Twig_SimpleFilter('jpReadTime', [$this, 'jpReadTimeFilter']),
         ];
     }
 
-    public function readTimeFunction($element, $showSeconds = true)
+    public function jpReadTimeFunction($element, $showSeconds = true)
     {
         $totalSeconds = 0;
         $vals = '';
@@ -120,7 +120,7 @@ class ReadTimeTwigExtension extends \Twig_Extension
         return new TimeModel($data);
     }
 
-    public function readTimeFilter($value = null, $showSeconds = true)
+    public function jpReadTimeFilter($value = null, $showSeconds = true)
     {
         $seconds = $this->valToSeconds($value);
 
