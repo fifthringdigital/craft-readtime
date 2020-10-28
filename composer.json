@@ -1,5 +1,5 @@
 {
-    "name": "jalendport/craft-readtime",
+    "name": "fifthringdigital/craft-readtime",
     "description": "Calculate the estimated read time for content. Wordsmith compatible fork.",
     "type": "craft-plugin",
     "version": "1.6.0",
